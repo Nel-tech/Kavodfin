@@ -20,14 +20,14 @@ function Nav() {
     if (!hasMounted) return null;
 
     const navigation = [
-        { name: 'Home', href: '/' },
-        { name: 'About', href: '/about' },
-        { name: 'How It Works', href: '/how-it-works' },
+        // { name: 'Home', href: '/' },
+        { name: 'About', href: '#about' },
+        { name: 'How It Works', href: '#how-it-works' },
     ];
 
     return (
         <div className="w-full">
-            <nav className="flex items-center justify-between py-5 px-6 md:px-12 lg:px-20 bg-transparent backdrop-blur-sm z-50 relative">
+            <nav className="px-1 flex items-center justify-between py-5  md:px-12 lg:px-20 bg-transparent backdrop-blur-sm z-50 relative">
                 {/* Logo */}
                 <Link
                     href="/"
@@ -39,7 +39,7 @@ function Nav() {
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center gap-8">
                     {navigation.map((item) => (
-                        <Link
+                        <a
                             key={item.name}
                             href={item.href}
                             className={`text-[1.1rem] font-inter uppercase tracking-wide font-medium transition duration-300 ${pathname === item.href
@@ -48,7 +48,7 @@ function Nav() {
                                 }`}
                         >
                             {item.name}
-                        </Link>
+                        </a>
                     ))}
                 </div>
 
@@ -92,7 +92,7 @@ function Nav() {
                         >
                             <Dialog.Panel>
                                 <div className="flex items-center justify-between">
-                                    <h2 className="text-xl font-bold text-yellow-400">KavodFin</h2>
+                                    {/* <h2 className="text-xl font-bold text-yellow-400">KavodFin</h2> */}
                                     <button
                                         type="button"
                                         onClick={() => setMobileMenuOpen(false)}
@@ -104,7 +104,7 @@ function Nav() {
 
                                 <div className="mt-8 space-y-6">
                                     {navigation.map((item) => (
-                                        <Link
+                                        <a
                                             key={item.name}
                                             href={item.href}
                                             className={`block text-lg font-semibold transition ${pathname === item.href
@@ -114,11 +114,11 @@ function Nav() {
                                             onClick={() => setMobileMenuOpen(false)}
                                         >
                                             {item.name}
-                                        </Link>
+                                        </a>
                                     ))}
 
                                     <Button className="mt-6 w-full bg-yellow-400 text-black hover:bg-yellow-500 font-semibold px-6 py-4 rounded-lg shadow-md transition-all">
-                                        Contact
+                                        Get Started
                                     </Button>
                                 </div>
                             </Dialog.Panel>
