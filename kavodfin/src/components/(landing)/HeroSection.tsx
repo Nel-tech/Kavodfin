@@ -6,7 +6,7 @@ import HeroImage from '../../../public/images/Bg-Hand-with-phone.png';
 
 function HeroSection({ children }: HeroProps) {
     return (
-        <section className="h-[90vh] relative lg:h-[170vh]  pt-[8rem] pb-28 bg-gradient-to-br from-green-900 via-black to-green-800 text-white px-6 overflow-hidden">
+        <section className="h-[110vh] relative lg:h-[170vh]  pt-[8rem] pb-28 bg-gradient-to-br from-green-900 via-black to-green-800 text-white px-6 overflow-hidden">
            
             <header className="absolute top-0 left-0 w-full z-20 px-6 py-4">
                 {children}

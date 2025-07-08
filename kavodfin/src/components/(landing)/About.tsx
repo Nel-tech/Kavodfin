@@ -16,7 +16,7 @@ export default function AboutPage() {
                 >
                     About KavodFin
                 </motion.h1>
-                <p className="mt-6  lg:text-lg  lg:text-center pr-[5rem] text-justify  lg:max-w-none mx-auto leading-relaxed text-gray-600 font-inter">
+                <p className="mt-6  lg:text-lg  lg:text-center pr-[5rem]   lg:max-w-none mx-auto leading-relaxed text-gray-600 font-inter">
                     We&apos;re redefining affiliate marketing in the Forex space giving everyday people the tools to earn daily commissions.
                 </p>
             </section>
@@ -27,7 +27,7 @@ export default function AboutPage() {
               <div>
 
                     <h2 className="text-2xl font-bold mb-4 text-green-700">Our Mission</h2>
-                    <p className="text-gray-700  max-w-[20rem] text-justify lg:max-w-none font-inter leading-relaxed">
+                    <p className="text-gray-700  max-w-[20rem]  lg:max-w-none font-inter leading-relaxed">
                         At KavodFin, our mission is to empower affiliates and aspiring entrepreneurs to earn through results based marketing  without needing trading experience.
                     </p>
               </div>
@@ -37,7 +37,7 @@ export default function AboutPage() {
                   <div>
 
                     <h2 className=" text-2xl font-bold mb-4 text-green-700">Our Vision</h2>
-                    <p className="text-gray-700 font-inter text-justify pr-[5rem]  leading-relaxed">
+                    <p className="text-gray-700 font-inter  pr-[5rem]  leading-relaxed">
                         We envision a financial future where anyone, regardless of location or skill, can monetize traffic and achieve financial independence through Forex affiliate marketing.
                     </p>
                   </div>
