@@ -1,6 +1,7 @@
 'use client';
 
 import { PlayCircle } from "lucide-react";
+import Image from "next/image";
 
 function FinalCTA() {
     return (
@@ -30,10 +31,11 @@ function FinalCTA() {
                     <div className="absolute inset-0 bg-black/70 z-10 flex items-center justify-center">
                         <PlayCircle className="w-16 h-16 text-yellow-400 hover:text-yellow-500 transition duration-300" />
                     </div>
-                    <img
+                    <Image
                         src="/images/video-thumb.jpg"
                         alt="Video thumbnail"
                         className="w-full h-full object-cover"
+                        
                     />
                 </a>
             </div>

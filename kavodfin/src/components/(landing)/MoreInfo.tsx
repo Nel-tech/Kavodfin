@@ -23,7 +23,7 @@ function MoreInfo() {
                     </h2>
 
                     <p className="text-gray-700 text-base  lg:text-lg leading-relaxed font-inter mb-6">
-                        With KavodFin, you're equipped with powerful tools to convert traffic into income effortlessly.
+                        With KavodFin, you&apos;re equipped with powerful tools to convert traffic into income effortlessly.
                     </p>
 
                     {/* Benefit List */}

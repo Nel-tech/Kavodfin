@@ -17,7 +17,7 @@ export default function AboutPage() {
                     About KavodFin
                 </motion.h1>
                 <p className="mt-6 text-left lg:text-lg  lg:text-center max-w-3xl mx-auto leading-relaxed text-gray-600 font-inter">
-                    We're redefining affiliate marketing in the Forex space giving everyday people the tools to earn daily commissions.
+                    We&apos;re redefining affiliate marketing in the Forex space giving everyday people the tools to earn daily commissions.
                 </p>
             </section>
 
