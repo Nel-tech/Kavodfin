@@ -35,7 +35,8 @@ function FinalCTA() {
                         src="/images/video-thumb.jpg"
                         alt="Video thumbnail"
                         className="w-full h-full object-cover"
-                        
+                        width={400}
+                        height={400}
                     />
                 </a>
             </div>
