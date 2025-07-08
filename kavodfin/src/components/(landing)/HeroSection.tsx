@@ -32,14 +32,15 @@ function HeroSection({ children }: HeroProps) {
                     Trusted by 10,000+ Traders
                 </p>
 
-                <h1 className="text-3xl leading-normal sm:text-2xl md:text-6xl lg:text-5xl font-dmSerifDisplay font-extrabold lg:leading-tight">
+                <h1 className="text-4xl leading-normal sm:text-2xl md:text-6xl lg:text-5xl font-dmSerifDisplay font-extrabold lg:leading-tight">
                     Why Just Watch Others <span className="text-yellow-400">Earn?</span>
                     <br /> Get Paid Daily With Our Signals
                 </h1>
 
-                <p className=" leading-relaxed text-sm sm:text-base lg:text-lg max-w-sm sm:max-w-md lg:max-w-lg mt-6 font-inter tracking-wide text-gray-300">
-                    Become a pro in just a few days and join thousands already winning with KavodFin.ng.
+                <p className="leading-relaxed text-lg lg:text-lg max-w-sm sm:max-w-md lg:max-w-lg mt-6 font-inter tracking-wide text-gray-300">
+                    Become a pro in just a few days and join thousands already winning with <span className="text-yellow-400 font-semibold">KavodFin.ng</span>.
                 </p>
+
 
 
                 <div className="mt-10">

@@ -55,7 +55,7 @@ function Nav() {
                 {/* CTA Button */}
                 <div className="hidden md:flex">
                     <Button className="bg-yellow-400 text-black font-inter hover:bg-yellow-500 font-semibold px-6 py-2 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-                        Contact
+                        Get Started
                     </Button>
                 </div>
 
