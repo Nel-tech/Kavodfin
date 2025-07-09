@@ -6,10 +6,11 @@ import Frame1 from '../../../public/images/Frame1.png';
 
 function MoreInfo() {
     const points = [
-        "Done-for-you landing pages and offers",
-        "Fast payouts with real-time performance tracking",
-        "No experience needed just send traffic"
+        "Promote high-payout Forex offers with zero experience needed",
+        "Leverage expert daily signals to drive results that convert",
+        "Earn commissions fast — just plug in, share, and start growing"
     ];
+
 
     return (
         <section className="py-20  px-6 md:px-20 bg-white mt-[4rem]">

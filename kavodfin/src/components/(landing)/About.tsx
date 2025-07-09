@@ -19,7 +19,7 @@ export default function AboutPage() {
             About <span className="text-yellow-500">KavodFin</span>
           </h1>
           <p className="mt-6 text-lg text-gray-600 font-inter leading-relaxed">
-            We&apos;re redefining affiliate marketing in the Forex space—giving everyday people the tools to earn daily commissions from traffic, not trading.
+            We&apos;re redefining the game and making sure defaulty disappear in the Forex space giving people everyday  tools to become successful in the financial market.
           </p>
         </motion.div>
 
@@ -49,7 +49,7 @@ export default function AboutPage() {
         >
           <h2 className="text-2xl font-bold mb-4 text-green-700">Our Mission</h2>
           <p className="text-gray-700 text-lg leading-relaxed font-inter">
-            We empower traders and entrepreneurs to earn from Forex promotions without needing any trading experience. We simplify, you earn.
+            We empower both old and new traders the accurate means of becoming well experienced people. We Simplify You Earn.
           </p>
         </motion.div>
 
@@ -60,7 +60,7 @@ export default function AboutPage() {
         >
           <h2 className="text-2xl font-bold mb-4 text-green-700">Our Vision</h2>
           <p className="text-gray-700 text-lg leading-relaxed font-inter">
-            To make financial freedom accessible so anyone can monetize traffic, anywhere, and build income streams that scale.
+            To make financial freedom accessible so anyone in anywhere can build income streams that scales.
           </p>
         </motion.div>
       </section>
@@ -70,8 +70,8 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-3 gap-10 text-center">
           {[
             { title: "10,000+ Traders", desc: "Our network is growing daily—real results, real money." },
-            { title: "Global Reach", desc: "Our offers convert across all regions. No restrictions." },
-            { title: "Zero Experience Needed", desc: "Promote, earn, and withdraw—no learning curve required." },
+            { title: "Global Reach", desc: "Our offer is for everybody. No restrictions" },
+            { title: "Zero Experience Needed", desc: "Start, earn, withdraw no learning curve needed" },
           ].map((item, index) => (
             <motion.div
               key={index}

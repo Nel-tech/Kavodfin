@@ -19,19 +19,19 @@ export default function HowItWorksSection() {
     {
       id: 2,
       title: 'Get Daily Signals',
-      description: 'Instantly receive high-converting Forex offers or trade signals tailored for CPA success.',
+      description: 'High pips, quality & accurate signals that is tailored for you to succeed',
       icon: SignalHigh,
     },
     {
       id: 3,
       title: 'Share Your Referral Link',
-      description: 'Promote with your custom link — social, ads, WhatsApp, or anywhere.',
+      description: 'Share our link to family, and friends, its all about win win for everybody',
       icon: Share2,
     },
     {
       id: 4,
-      title: 'Earn Daily Commissions',
-      description: 'Watch your wallet grow as people sign up, activate, and start using the signals.',
+      title: 'Earn Daily Profit',
+      description: 'Watch your wallet grow as you make proper use of this life changing opportunity.',
       icon: Coins,
     },
   ];
@@ -62,7 +62,7 @@ export default function HowItWorksSection() {
                 <Icon className="w-14 h-14 text-yellow-400" />
               </motion.div>
 
-              <h3 className="text-xl font-bold font-inter mb-3 group-hover:text-yellow-300 transition">
+              <h3 className="text-xl font-bold font-dmSerifDisplay mb-3 group-hover:text-yellow-300 transition">
                 {step.title}
               </h3>
               <p className="text-gray-200 font-inter text-sm leading-relaxed">
