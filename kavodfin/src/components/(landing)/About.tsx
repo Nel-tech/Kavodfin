@@ -19,7 +19,7 @@ export default function AboutPage() {
             About <span className="text-yellow-500">KavodFin</span>
           </h1>
           <p className="lg:text-left  text-center  mt-6 text-base text-gray-600 font-inter">
-            We&apos;re redefining the game and making sure defaulty disappear in the Forex space giving people everyday  tools to become successful in the financial market.
+            We&apos;re redefining the game and making sure difficulty disappear in the Forex space giving people everyday  tools to become successful in the financial market.
           </p>
         </motion.div>
 
@@ -48,7 +48,7 @@ export default function AboutPage() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-2xl lg:text-left text-center font-montserrat font-bold mb-4 text-green-700">Our Mission</h2>
-          <p className="text-gray-700 text-center text-base leading-relaxed font-inter">
+          <p className="text-gray-700 text-center lg:text-left  text-base leading-relaxed font-inter">
             We empower both old and new traders the accurate means of becoming well experienced people. We Simplify You Earn.
           </p>
         </motion.div>
@@ -59,7 +59,7 @@ export default function AboutPage() {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <h2 className="text-2xl font-montserrat lg:text-left text-center font-bold mb-4 text-green-700">Our Vision</h2>
-          <p className="text-gray-700 text-lg text-center text-base leading-relaxed font-inter">
+          <p className="text-gray-700 text-lg lg:text-left text-center  leading-relaxed font-inter">
             To make financial freedom accessible so anyone in anywhere can build income streams that scales.
           </p>
         </motion.div>
@@ -100,9 +100,16 @@ export default function AboutPage() {
         <p className="text-gray-300 text-base font-inter max-w-xl mx-auto mb-10">
           Join the wave of financially empowered traders. Fast payouts. No skills needed.
         </p>
+
+        <a
+          href="https://chat.whatsapp.com/FEZGuJbpOof60XCaerA9zo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
         <button className="bg-yellow-400 font-inter  hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-md transition duration-300">
           Get Started Now
         </button>
+        </a>
       </section>
     </div>
   );

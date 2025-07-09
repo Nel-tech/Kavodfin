@@ -34,9 +34,16 @@ function MoreInfo() {
                     </ul>
 
                     {/* CTA */}
+
+                      <a
+                        href="https://chat.whatsapp.com/FEZGuJbpOof60XCaerA9zo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                     <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-300">
                         Start Promoting Today
                     </button>
+                    </a>
                 </div>
 
                 {/* Right: Image */}

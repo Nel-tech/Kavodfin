@@ -34,7 +34,7 @@ function HeroSection({ children }: HeroProps) {
 
                 <h1 className="text-4xl leading-normal sm:text-2xl md:text-6xl lg:text-5xl font-montserrat font-extrabold lg:leading-tight">
                     Why Just Watch Others <span className="text-yellow-400">Earn?</span>
-                    <br /> Get Paid Daily With Our Signals
+                    <br />When you can  get paid daily with our signals
                 </h1>
 
                 <p className="leading-relaxed text-lg lg:text-lg max-w-sm sm:max-w-md lg:max-w-lg mt-6 font-inter tracking-wide text-gray-300">
@@ -44,9 +44,16 @@ function HeroSection({ children }: HeroProps) {
 
 
                 <div className="mt-10">
+                    <a
+                        href="https://chat.whatsapp.com/FEZGuJbpOof60XCaerA9zo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
                     <button className="bg-yellow-400 font-inter hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-300">
                         Start Earning Now
                     </button>
+                    </a>
                 </div>
             </div>
 

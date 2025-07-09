@@ -54,9 +54,16 @@ function Nav() {
 
                 {/* CTA Button */}
                 <div className="hidden md:flex">
-                    <Button className="bg-yellow-400 text-black font-inter hover:bg-yellow-500 font-semibold px-6 py-2 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-                        Get Started
-                    </Button>
+                    <a
+                        href="https://chat.whatsapp.com/FEZGuJbpOof60XCaerA9zo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Button className="bg-yellow-400 text-black font-inter hover:bg-yellow-500 font-semibold px-6 py-2 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                            Get Started
+                        </Button>
+                    </a>
+
                 </div>
 
                 {/* Mobile Menu Icon */}
