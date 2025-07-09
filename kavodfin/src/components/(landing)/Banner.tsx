@@ -20,7 +20,7 @@ function FinalCTA() {
                 <rect width="100%" height="100%" fill="url(#grid)" />
             </svg>
             {/* Title */}
-            <h2 className="text-2xl lg:text-2xl md:text-2xl font-bold mb-10 font-dmSerifDisplay leading-snug z-10">
+            <h2 className="text-2xl lg:text-2xl md:text-2xl font-bold mb-10 font-montserrat leading-snug z-10">
                 <span className="text-yellow-400">Still Confused?</span><br />
                 Watch This Video to Learn More
             </h2>

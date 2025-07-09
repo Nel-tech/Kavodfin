@@ -20,7 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
                 inter:['var(--font-inter)', 'sans-serif'],
-                dmSerifDisplay: ['var(--font-dmSerifDisplay)', 'serif'],
+                montserrat: ['var(--font-montserrat)', 'serif'],
             },
 			colors: {
 				border: 'hsl(var(--border))',

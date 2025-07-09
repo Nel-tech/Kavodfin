@@ -27,12 +27,12 @@ function HeroSection({ children }: HeroProps) {
             </svg>
 
             {/* Hero Content */}
-            <div className="text-left items-start justify-start  mt-[3.5rem] flex flex-col lg:justify-center lg:items-center lg:mx-auto lg:text-center relative z-10 max-w-4xl ">
-                <p className="text-sm font-dmSerifDisplay md:text-base uppercase tracking-widest text-yellow-400 mb-4 animate-pulse">
+            <div className="text-left items-start justify-start  mt-[2.9rem] flex flex-col lg:justify-center lg:items-center lg:mx-auto lg:text-center relative z-10 max-w-4xl ">
+                <p className="text-sm  font-montserrat md:text-base uppercase tracking-widest text-yellow-400 mb-4 animate-pulse">
                     Trusted by 10,000+ Traders
                 </p>
 
-                <h1 className="text-4xl leading-normal sm:text-2xl md:text-6xl lg:text-5xl font-dmSerifDisplay font-extrabold lg:leading-tight">
+                <h1 className="text-4xl leading-normal sm:text-2xl md:text-6xl lg:text-5xl font-montserrat font-extrabold lg:leading-tight">
                     Why Just Watch Others <span className="text-yellow-400">Earn?</span>
                     <br /> Get Paid Daily With Our Signals
                 </h1>

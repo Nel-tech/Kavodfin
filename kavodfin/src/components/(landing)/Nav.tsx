@@ -31,7 +31,7 @@ function Nav() {
                 {/* Logo */}
                 <Link
                     href="/"
-                    className="text-2xl font-dmSerifDisplay font-bold text-yellow-400 tracking-wide hover:opacity-90 transition"
+                    className="text-2xl font-montserrat font-bold text-yellow-400 tracking-wide hover:opacity-90 transition"
                 >
                     KavodFin
                 </Link>

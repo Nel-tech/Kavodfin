@@ -4,10 +4,10 @@ import { Facebook, Instagram, Twitter, Mail } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white px-6 py-10 mt-[3rem] md:px-20">
+        <footer className="bg-black text-white px-6 py-10  md:px-20">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 border-b border-white/10 pb-6">
                 {/* Brand */}
-                <h2 className="text-2xl font-dmSerifDisplay font-bold text-yellow-400">
+                <h2 className="text-2xl font-montserrat font-bold text-yellow-400">
                     KavodFin
                 </h2>
 

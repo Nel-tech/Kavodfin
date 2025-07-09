@@ -6,9 +6,9 @@ import Frame1 from '../../../public/images/Frame1.png';
 
 function MoreInfo() {
     const points = [
-        "Promote high-payout Forex offers with zero experience needed",
-        "Leverage expert daily signals to drive results that convert",
-        "Earn commissions fast — just plug in, share, and start growing"
+        "Promote high-payout pips and signals with zero experience needed",
+        "Leverage expert daily signals to drive live changing results",
+        "Earn fast profit — just plug in and grow "
     ];
 
 
@@ -18,14 +18,10 @@ function MoreInfo() {
 
                 {/* Left: Text Content */}
                 <div className="md:w-1/2 text-left">
-                    <h2 className="text-2xl lg:text-3xl md:text-4xl font-bold text-green-900 mb-4 leading-snug font-dmSerifDisplay">
+                    <h2 className="font-montserrat text-2xl lg:text-3xl md:text-4xl font-bold text-green-900 mb-4 leading-relaxed ">
                         Trade Smarter. Take Profits. <br />
                         <span className="text-yellow-500">We’ll Do the Hard Part</span>
                     </h2>
-
-                    <p className="text-gray-700 text-base  lg:text-lg leading-relaxed font-inter mb-6">
-                        With KavodFin, you&apos;re equipped with powerful tools to convert traffic into income effortlessly.
-                    </p>
 
                     {/* Benefit List */}
                     <ul className="space-y-4 mb-8">

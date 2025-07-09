@@ -38,7 +38,7 @@ export default function HowItWorksSection() {
 
   return (
     <section id="how-it-works" className=" bg-white py-24 px-6 md:px-20 text-center">
-      <h2 className="text-3xl font-dmSerifDisplay md:text-4xl font-bold text-green-900 mb-16">
+      <h2 className="text-3xl font-montserrat md:text-4xl font-bold text-green-900 mb-16">
         How It Works
       </h2>
 
@@ -62,7 +62,7 @@ export default function HowItWorksSection() {
                 <Icon className="w-14 h-14 text-yellow-400" />
               </motion.div>
 
-              <h3 className="text-xl font-bold font-dmSerifDisplay mb-3 group-hover:text-yellow-300 transition">
+              <h3 className="text-xl font-bold font-montserrat mb-3 group-hover:text-yellow-300 transition">
                 {step.title}
               </h3>
               <p className="text-gray-200 font-inter text-sm leading-relaxed">

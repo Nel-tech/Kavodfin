@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, DM_Serif_Display } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,7 +7,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const dmSerifDisplay = DM_Serif_Display({ subsets: ['latin'], weight: '400', variable: '--font-dmserif' });
+const montserrat = Montserrat({ subsets: ['latin'], weight: '400', variable: '--font-montserrat' });
 
 export const metadata: Metadata = {
   title: "KavodFin",
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${dmSerifDisplay.variable} antialiased`}
+        className={`${inter.variable} ${montserrat.variable} antialiased`}
       >
         {children}
       </body>

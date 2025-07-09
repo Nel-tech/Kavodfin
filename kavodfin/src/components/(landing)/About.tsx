@@ -15,10 +15,10 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold font-dmSerifDisplay text-green-700 leading-snug">
+          <h1 className=" lg:text-left text-center text-4xl md:text-5xl font-bold font-montserrat text-green-700 leading-snug">
             About <span className="text-yellow-500">KavodFin</span>
           </h1>
-          <p className="mt-6 text-lg text-gray-600 font-inter leading-relaxed">
+          <p className="lg:text-left  text-center  mt-6 text-base text-gray-600 font-inter">
             We&apos;re redefining the game and making sure defaulty disappear in the Forex space giving people everyday  tools to become successful in the financial market.
           </p>
         </motion.div>
@@ -47,8 +47,8 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-2xl font-bold mb-4 text-green-700">Our Mission</h2>
-          <p className="text-gray-700 text-lg leading-relaxed font-inter">
+          <h2 className="text-2xl lg:text-left text-center font-montserrat font-bold mb-4 text-green-700">Our Mission</h2>
+          <p className="text-gray-700 text-center text-base leading-relaxed font-inter">
             We empower both old and new traders the accurate means of becoming well experienced people. We Simplify You Earn.
           </p>
         </motion.div>
@@ -58,8 +58,8 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <h2 className="text-2xl font-bold mb-4 text-green-700">Our Vision</h2>
-          <p className="text-gray-700 text-lg leading-relaxed font-inter">
+          <h2 className="text-2xl font-montserrat lg:text-left text-center font-bold mb-4 text-green-700">Our Vision</h2>
+          <p className="text-gray-700 text-lg text-center text-base leading-relaxed font-inter">
             To make financial freedom accessible so anyone in anywhere can build income streams that scales.
           </p>
         </motion.div>
@@ -80,8 +80,8 @@ export default function AboutPage() {
               transition={{ delay: index * 0.2 }}
               className="bg-gray-50 border border-gray-200 p-8 rounded-xl shadow hover:shadow-md transition"
             >
-              <h3 className="text-xl font-bold text-green-700 mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-sm font-inter">{item.desc}</p>
+              <h3 className="text-xl font-montserrat font-bold text-green-700 mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-base font-inter">{item.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -93,14 +93,14 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-5xl font-dmSerifDisplay font-bold mb-6"
+          className="text-3xl md:text-5xl font-montserrat  font-bold mb-6"
         >
           Ready to Start Earning with KavodFin?
         </motion.h2>
-        <p className="text-gray-300 max-w-xl mx-auto mb-10">
+        <p className="text-gray-300 text-base font-inter max-w-xl mx-auto mb-10">
           Join the wave of financially empowered traders. Fast payouts. No skills needed.
         </p>
-        <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-md transition duration-300">
+        <button className="bg-yellow-400 font-inter  hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-md transition duration-300">
           Get Started Now
         </button>
       </section>
