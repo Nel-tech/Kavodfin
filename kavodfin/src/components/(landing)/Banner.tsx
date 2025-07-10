@@ -1,8 +1,5 @@
 'use client';
 
-import { PlayCircle } from "lucide-react";
-import Image from "next/image";
-
 function FinalCTA() {
     return (
         <section className="relative  mt-[4rem] py-[2rem] h-[70vh] md:h-[80vh] bg-green-900 text-white px-6 flex flex-col items-center justify-center text-center overflow-hidden">
@@ -36,6 +33,8 @@ function FinalCTA() {
                     Your browser does not support the video tag.
                 </video>
             </div>
+
+        
 
         </section>
     );
