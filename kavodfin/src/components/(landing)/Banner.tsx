@@ -25,21 +25,18 @@ function FinalCTA() {
                 Watch This Video to Learn More
             </h2>
 
-            {/* Video Preview with Play Button */}
+            
             <div className="relative w-full max-w-2xl aspect-video rounded-xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300 z-10">
-                <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener noreferrer">
-                    <div className="absolute inset-0 bg-black/70 z-10 flex items-center justify-center">
-                        <PlayCircle className="w-16 h-16 text-yellow-400 hover:text-yellow-500 transition duration-300" />
-                    </div>
-                    <Image
-                        src="/images/video-thumb.jpg"
-                        alt="Video thumbnail"
-                        className="w-full h-full object-cover"
-                        width={400}
-                        height={400}
-                    />
-                </a>
+                <video
+                    controls
+                    poster="/video/kavodfin-thumb.png"  
+                    className="w-full h-full object-cover"
+                >
+                    <source src="/video/KavodFin.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
+
         </section>
     );
 }
