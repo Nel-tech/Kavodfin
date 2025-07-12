@@ -54,15 +54,14 @@ function Nav() {
 
                 {/* CTA Button */}
                 <div className="hidden md:flex">
-                    <a
-                        href="https://chat.whatsapp.com/FEZGuJbpOof60XCaerA9zo"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Button className="bg-yellow-400 text-black font-inter hover:bg-yellow-500 font-semibold px-6 py-2 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                   
+                        <Link href='/funnel'>
+                        
+                            <Button className="bg-yellow-400 cursor-pointer  text-black font-inter hover:bg-yellow-500 font-semibold px-6 py-2 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
                             Get Started
                         </Button>
-                    </a>
+                        </Link>
+                  
 
                 </div>
 
@@ -124,9 +123,13 @@ function Nav() {
                                         </a>
                                     ))}
 
-                                    <Button className="mt-6 w-full bg-yellow-400 text-black hover:bg-yellow-500 font-semibold px-6 py-4 rounded-lg shadow-md transition-all">
+                                    <Link href='/funnel'>
+                                    
+                                    <Button className="cursor-pointer mt-6 w-full bg-yellow-400 text-black hover:bg-yellow-500 font-semibold px-6 py-4 rounded-lg shadow-md transition-all">
                                         Get Started
                                     </Button>
+                                    </Link>
+
                                 </div>
                             </Dialog.Panel>
                         </motion.div>

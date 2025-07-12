@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import AboutImage from '../../../public/images/About-Img.png' 
+import {Button} from '@/components/ui/button'
 
 export default function AboutPage() {
   return (
@@ -106,9 +107,9 @@ export default function AboutPage() {
           target="_blank"
           rel="noopener noreferrer"
         >
-        <button className="bg-yellow-400 font-inter  hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-md transition duration-300">
+          <Button className="bg-yellow-400 font-inter cursor-pointer  hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-md transition duration-300">
           Get Started Now
-        </button>
+        </Button>
         </a>
       </section>
     </div>

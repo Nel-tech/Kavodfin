@@ -3,6 +3,7 @@
 import { HeroProps } from "@/types/type";
 import Image from "next/image";
 import HeroImage from '../../../public/images/Bg-Hand-with-phone.png';
+import {Button} from '@/components/ui/button'
 
 function HeroSection({ children }: HeroProps) {
     return (
@@ -50,9 +51,9 @@ function HeroSection({ children }: HeroProps) {
                         rel="noopener noreferrer"
                     >
 
-                    <button className="bg-yellow-400 font-inter hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-300">
+                    <Button className="bg-yellow-400 font-inter cursor-pointer  hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-300">
                         Start Earning Now
-                    </button>
+                    </Button>
                     </a>
                 </div>
             </div>

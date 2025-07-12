@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import Frame1 from '../../../public/images/Frame1.png';
+import { Button } from "@/components/ui/button";
 
 function MoreInfo() {
     const points = [
@@ -40,9 +41,9 @@ function MoreInfo() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                    <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-300">
+                        <Button className="bg-yellow-400 cursor-pointer  hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-300">
                         Start Promoting Today
-                    </button>
+                    </Button>
                     </a>
                 </div>
 
