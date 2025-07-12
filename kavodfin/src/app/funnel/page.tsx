@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import Image from 'next/image';
 import { ArrowDown, Target, Users, TrendingUp, DollarSign, Zap, CheckCircle, Star, Play, Shield, Clock, Award, MessageCircle } from 'lucide-react';
 
 const SalesFunnel = () => {
@@ -152,7 +153,7 @@ const SalesFunnel = () => {
               Real People, Real Results
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Don't just take our word for it. See what our members are earning with our proven system.
+              Don&apos;t just take our word for it. See what our members are earning with our proven system.
             </p>
           </div>
 
@@ -172,10 +173,12 @@ const SalesFunnel = () => {
 
               <div className="text-center">
                 <div className="flex justify-center mb-6">
-                  <img
+                  <Image
                     src={testimonials[activeTestimonial].image}
                     alt={testimonials[activeTestimonial].name}
-                    className="w-20 h-20 rounded-full border-4 border-yellow-400"
+                    width={20}
+                    height={20}
+                    className=" rounded-full border-4 border-yellow-400"
                   />
                 </div>
                 <div className="flex justify-center mb-4">
@@ -229,7 +232,7 @@ const SalesFunnel = () => {
               Everything You Need to Succeed
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We've eliminated all the guesswork. Just follow our proven system and start earning.
+              We&apos;ve eliminated all the guesswork. Just follow our proven system and start earning.
             </p>
           </div>
 
@@ -319,7 +322,7 @@ const SalesFunnel = () => {
                 className="w-full bg-yellow-400 text-green-900 hover:bg-yellow-300 py-4 text-xl font-bold shadow-xl"
                 onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Join Now - It's FREE!
+                Join Now - It&apos;s FREE!
               </Button>
             </CardContent>
           </Card>
