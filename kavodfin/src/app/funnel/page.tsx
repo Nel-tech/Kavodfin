@@ -187,8 +187,9 @@ const SalesFunnel = () => {
                   ))}
                 </div>
                 <blockquote className="text-2xl md:text-3xl font-semibold text-green-900 mb-6 leading-relaxed">
-                  "{testimonials[activeTestimonial].text}"
+                  &quot;{testimonials[activeTestimonial].text}&quot;
                 </blockquote>
+
                 <div className="space-y-2">
                   <p className="text-lg font-bold text-green-800">
                     {testimonials[activeTestimonial].name}
