@@ -38,7 +38,7 @@ function HeroSection({ children }: HeroProps) {
                 </h1>
 
                 <p className="text-gray-300 text-lg font-inter max-w-xl mb-8">
-                    Stop guessing and start winning. Join our signal group and get 90%+ accurate Forex trade alerts from experts — even if you're just starting out.
+                    Stop guessing and start winning. Join our signal group and get 90%+ accurate Forex trade alerts from experts — even if you&lsquo;re just starting out.
                 </p>
 
                 <a

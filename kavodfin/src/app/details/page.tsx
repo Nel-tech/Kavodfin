@@ -49,7 +49,7 @@ export default function BridgePage() {
             <div>
               <h2 className="text-3xl font-bold text-green-800 mb-8 flex items-center">
                 <Zap className="h-8 w-8 text-yellow-500 mr-3" />
-                What You'll Get
+                What You&lsquo;ll Get
               </h2>
               <div className="space-y-4">
                 {[
@@ -105,7 +105,7 @@ export default function BridgePage() {
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="text-2xl font-bold mb-2">Premium Signal Preview</h3>
-                      <p className="text-green-100">See exactly what you'll receive in your WhatsApp</p>
+                      <p className="text-green-100">See exactly what you&lsquo;ll receive in your WhatsApp</p>
                     </div>
                     <div className="text-right">
                       <div className="text-3xl font-bold">+127</div>
@@ -207,7 +207,7 @@ export default function BridgePage() {
                       <Star key={i} className="h-5 w-5 fill-current" />
                     ))}
                   </div>
-                  <p className="text-slate-700 mb-6 italic leading-relaxed">"{testimonial.text}"</p>
+                  <p className="text-slate-700 mb-6 italic leading-relaxed">"&lsquo;{testimonial.text}"</p>
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="font-bold text-slate-800">{testimonial.name}</div>
@@ -230,7 +230,7 @@ export default function BridgePage() {
               <span className="text-green-700 text-lg font-semibold">100% Trusted • 100% Results</span>
               <Lock className="h-5 w-5 text-yellow-500" />
             </div>
-            <p className="text-slate-600 mt-4 text-lg">We don't just give signals – we help you grow and succeed.</p>
+            <p className="text-slate-600 mt-4 text-lg">We don&lsquo;t just give signals – we help you grow and succeed.</p>
           </div>
 
           {/* Final CTA */}
