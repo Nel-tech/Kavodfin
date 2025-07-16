@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import AboutImage from '../../../public/images/About-Img.png' 
 import {Button} from '@/components/ui/button'
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -102,15 +103,13 @@ export default function AboutPage() {
           Join the wave of financially empowered traders. Fast payouts. No skills needed.
         </p>
 
-        <a
-          href="https://chat.whatsapp.com/FEZGuJbpOof60XCaerA9zo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button className="bg-yellow-400 font-inter cursor-pointer  hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-md transition duration-300">
-          Get Started Now
+       <Link href='/details'>
+       
+          <Button className="bg-yellow-400 font-inter cursor-pointer   hover:bg-yellow-500 text-black font-bold px-6 py-7 rounded-lg shadow-md transition duration-300">
+          Get Free Signals
         </Button>
-        </a>
+       </Link>
+      
       </section>
     </div>
   );

@@ -55,9 +55,9 @@ function Nav() {
                 {/* CTA Button */}
                 <div className="hidden md:flex">
                    
-                        <Link href='/funnel'>
+                        <Link href='/details'>
                         
-                            <Button className="bg-yellow-400 cursor-pointer  text-black font-inter hover:bg-yellow-500 font-semibold px-6 py-2 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                        <Button className="bg-yellow-400 cursor-pointer  text-black font-inter hover:bg-yellow-500 font-semibold px-4 py-5 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
                             Get Started
                         </Button>
                         </Link>

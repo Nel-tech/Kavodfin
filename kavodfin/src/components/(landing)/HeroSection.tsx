@@ -28,35 +28,31 @@ function HeroSection({ children }: HeroProps) {
             </svg>
 
             {/* Hero Content */}
-            <div className="text-left items-start justify-start  mt-[2.9rem] flex flex-col lg:justify-center lg:items-center lg:mx-auto lg:text-center relative z-10 max-w-4xl ">
-                <p className="text-sm  font-montserrat md:text-base uppercase tracking-widest text-yellow-400 mb-4 animate-pulse">
+            <div className="text-center mt-16 flex flex-col items-center justify-center max-w-3xl mx-auto px-4 relative z-10">
+                <p className="text-sm font-montserrat uppercase tracking-widest text-yellow-400 mb-4 animate-pulse">
                     Trusted by 10,000+ Traders
                 </p>
 
-                <h1 className="text-4xl leading-normal sm:text-2xl md:text-6xl lg:text-5xl font-montserrat font-extrabold lg:leading-tight">
-                    Why Just Watch Others <span className="text-yellow-400">Earn?</span>
-                    <br />When you can  get paid daily with our signals
+                <h1 className="text-4xl md:text-4xl lg:text-5xl font-extrabold font-montserrat leading-tight mb-6">
+                    Daily Profitable Forex Signals Delivered Straight to You
                 </h1>
 
-                <p className="leading-relaxed text-lg lg:text-lg max-w-sm sm:max-w-md lg:max-w-lg mt-6 font-inter tracking-wide text-gray-300">
-                    Become a pro in just a few days and join thousands already winning with <span className="text-yellow-400 font-semibold">KavodFin.ng</span>.
+                <p className="text-gray-300 text-lg font-inter max-w-xl mb-8">
+                    Stop guessing and start winning. Join our signal group and get 90%+ accurate Forex trade alerts from experts — even if you're just starting out.
                 </p>
 
-
-
-                <div className="mt-10">
-                    <a
-                        href="https://chat.whatsapp.com/FEZGuJbpOof60XCaerA9zo"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-
-                    <Button className="bg-yellow-400 font-inter cursor-pointer  hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-300">
-                        Start Earning Now
+                <a
+                    href="https://chat.whatsapp.com/FEZGuJbpOof60XCaerA9zo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Button className="bg-yellow-400 text-black font-bold px-5 py-6 rounded-sm shadow-lg hover:bg-yellow-500 transition-all duration-300">
+                         Join Now on WhatsApp
                     </Button>
-                    </a>
-                </div>
+                </a>
             </div>
+
+
 
            
            
@@ -93,7 +89,7 @@ function HeroSection({ children }: HeroProps) {
                 
             </div>
 
-            <div className="absolute top-[39rem] left-1/2 transform -translate-x-1/2 z-10">
+            <div className="absolute top-[45rem] left-1/2 transform -translate-x-1/2 z-10">
                 <Image
                     src={HeroImage}
                     alt="Image-of-a-Hand-Holding-a-phone"

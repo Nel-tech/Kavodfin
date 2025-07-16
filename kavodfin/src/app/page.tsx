@@ -4,7 +4,7 @@ import Nav from "../components/(landing)/Nav";
 import HeroSection from "@/components/(landing)/HeroSection";
 import About from "@/components/(landing)/About";
 import How_it_works from "@/components/(landing)/How_it_works";
-import MoreInfo from "@/components/(landing)/MoreInfo";
+// import MoreInfo from "@/components/(landing)/MoreInfo";
 import Footer from "@/components/(landing)/Footer";
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
    </HeroSection>
       <About />
    <How_it_works/>
-   <MoreInfo/>
+   {/* <MoreInfo/> */}
    <Banner/>
    <Footer/>
    </div>
