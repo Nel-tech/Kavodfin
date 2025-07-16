@@ -207,7 +207,8 @@ export default function BridgePage() {
                       <Star key={i} className="h-5 w-5 fill-current" />
                     ))}
                   </div>
-                  <p className="text-slate-700 mb-6 italic leading-relaxed">"&lsquo;{testimonial.text}"</p>
+                  <p className="text-slate-700 mb-6 italic leading-relaxed">&ldquo;{testimonial.text}&rdquo;</p>
+
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="font-bold text-slate-800">{testimonial.name}</div>
