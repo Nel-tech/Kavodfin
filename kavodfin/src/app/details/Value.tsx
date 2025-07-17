@@ -6,7 +6,7 @@ function Value() {
       <div className='container mx-auto px-4 py-12 mt-[8rem]'>
           <div className=" grid lg:grid-cols-2 gap-12 mb-20">
               <div>
-                  <h2 className="text-3xl font-montserrat font-bold text-green-800 mb-8 flex items-center">
+                  <h2 className="text-3xl sm:text-center font-montserrat font-bold text-green-800 mb-8 flex items-center">
                      
                       What You&lsquo;ll Get
                   </h2>

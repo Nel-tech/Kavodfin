@@ -49,7 +49,7 @@ function HeroSection() {
                   </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed">
                   Join thousands of traders getting real results daily with high-accuracy Forex signals, expert support &
                   total freedom.
               </p>
