@@ -106,7 +106,7 @@ export default function AboutPage() {
        <Link href='/details'>
        
           <Button className="bg-yellow-400 font-inter cursor-pointer   hover:bg-yellow-500 text-black font-bold px-6 py-7 rounded-lg shadow-md transition duration-300">
-          Get Free Signals
+          Checkout
         </Button>
        </Link>
       
