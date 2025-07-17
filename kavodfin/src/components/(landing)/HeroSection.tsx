@@ -7,7 +7,7 @@ import {Button} from '@/components/ui/button'
 
 function HeroSection({ children }: HeroProps) {
     return (
-        <section className="h-[110vh] relative lg:h-[170vh]  pt-[8rem] pb-28 bg-gradient-to-br from-green-900 via-black to-green-800 text-white px-6 overflow-hidden">
+        <section className="h-[120vh] relative lg:h-[170vh]  pt-[8rem] pb-28 bg-gradient-to-br from-green-900 via-black to-green-800 text-white px-6 overflow-hidden">
            
             <header className="absolute top-0 left-0 w-full z-20 px-6 py-4">
                 {children}
@@ -28,7 +28,7 @@ function HeroSection({ children }: HeroProps) {
             </svg>
 
             {/* Hero Content */}
-            <div className="text-center mt-16 flex flex-col items-center justify-center max-w-3xl mx-auto px-4 relative z-10">
+            <div className="text-center mt-16  max-w-3xl mx-auto px-2 relative z-10">
                 <p className="text-sm font-montserrat uppercase tracking-widest text-yellow-400 mb-4 animate-pulse">
                     Trusted by 10,000+ Traders
                 </p>
@@ -37,19 +37,24 @@ function HeroSection({ children }: HeroProps) {
                     Daily Profitable Forex Signals Delivered Straight to You
                 </h1>
 
-                <p className="text-gray-300 text-left text-lg  lg:text-center font-inter max-w-xl mb-8">
+                <p className="text-gray-300 text-left text-lg  lg:text-center lg:mx-auto font-inter max-w-xl mb-8">
                     Stop guessing and start winning. Join our signal group and get 90%+ accurate Forex trade alerts from experts — even if you&lsquo;re just starting out.
                 </p>
+
+                <div className="flex justify-start lg:justify-center lg:text-center ">
 
                 <a
                     href="https://chat.whatsapp.com/FEZGuJbpOof60XCaerA9zo"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Button className="bg-yellow-400 text-black font-bold px-5 py-6 rounded-sm shadow-lg hover:bg-yellow-500 transition-all duration-300">
+                    <Button className="bg-yellow-400 text-black  font-bold px-5 py-6 rounded-sm shadow-lg hover:bg-yellow-500 transition-all duration-300">
                          Join Now on WhatsApp
                     </Button>
                 </a>
+
+                </div>
+
             </div>
 
 
@@ -89,7 +94,7 @@ function HeroSection({ children }: HeroProps) {
                 
             </div>
 
-            <div className="absolute top-[45rem] left-1/2 transform -translate-x-1/2 z-10">
+            <div className="absolute top-[42rem] left-1/2 transform -translate-x-1/2 z-10">
                 <Image
                     src={HeroImage}
                     alt="Image-of-a-Hand-Holding-a-phone"

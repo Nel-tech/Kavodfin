@@ -1,48 +1,17 @@
-'use client';
+'use client'
 
-import { motion } from 'framer-motion';
-import {
-  Wallet,
-  SignalHigh,
-  Share2,
-  Coins,
-} from 'lucide-react';
+import {steps} from '../../helpers/Data'
+import { motion } from "framer-motion";
 
 export default function HowItWorksSection() {
-  const steps = [
-    {
-      id: 1,
-      title: 'Join the Network',
-      description: 'Sign up for free to gain access to your KavodFin dashboard — no experience needed.',
-      icon: Wallet,
-    },
-    {
-      id: 2,
-      title: 'Get Daily Signals',
-      description: 'High pips, quality & accurate signals that is tailored for you to succeed',
-      icon: SignalHigh,
-    },
-    {
-      id: 3,
-      title: 'Share Your Referral Link',
-      description: 'Share our link to family, and friends, its all about win win for everybody',
-      icon: Share2,
-    },
-    {
-      id: 4,
-      title: 'Earn Daily Profit',
-      description: 'Watch your wallet grow as you make proper use of this life changing opportunity.',
-      icon: Coins,
-    },
-  ];
-
+  
   return (
-    <section id="how-it-works" className=" bg-white py-24 px-6 md:px-20 text-center">
+    <section id="how-it-works" className="bg-white py-24 px-6 md:px-20 text-center">
       <h2 className="text-3xl font-montserrat md:text-4xl font-bold text-green-900 mb-16">
-        How It Works
+        🛠 How It Works – Simple 3-Step Process
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {steps.map((step, index) => {
           const Icon = step.icon;
           return (
@@ -68,17 +37,23 @@ export default function HowItWorksSection() {
               <p className="text-gray-200 font-inter text-sm leading-relaxed">
                 {step.description}
               </p>
+
+              {step.button && (
+                <a
+                  href={step.button.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 mt-4 px-5 py-2 bg-yellow-400 text-green-900 font-semibold rounded-md shadow hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105 active:scale-95"
+                >
+                  {step.button.icon && <step.button.icon className="w-5 h-5" />}
+                  {step.button.label}
+                </a>
+              )}
+
             </motion.div>
           );
         })}
       </div>
-
-      {/* <div className="mt-20">
-        <p className="text-lg font-semibold text-green-900 font-inter max-w-xl mx-auto">
-          No Trading Skills? No Problem. Just Plug in, Share, and Start Earning!
-        </p>
-      </div> */}
     </section>
-
   );
 }

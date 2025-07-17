@@ -27,7 +27,8 @@ function Nav() {
 
     return (
         <div className="w-full">
-            <nav className="px-1 flex items-center justify-between py-5  md:px-12 lg:px-20 bg-transparent backdrop-blur-sm z-50 relative">
+            <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-md px-1 flex items-center justify-between py-5 md:px-12 lg:px-20">
+
                 {/* Logo */}
                 <Link
                     href="/"
