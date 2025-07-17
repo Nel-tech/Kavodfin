@@ -124,7 +124,7 @@ function Nav() {
                                         </a>
                                     ))}
 
-                                    <Link href='/funnel'>
+                                    <Link href='/details'>
                                     
                                     <Button className="cursor-pointer mt-6 w-full bg-yellow-400 text-black hover:bg-yellow-500 font-semibold px-6 py-4 rounded-lg shadow-md transition-all">
                                         Get Started
