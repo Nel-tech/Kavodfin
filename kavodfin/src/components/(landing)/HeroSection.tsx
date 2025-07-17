@@ -33,11 +33,11 @@ function HeroSection({ children }: HeroProps) {
                     Trusted by 10,000+ Traders
                 </p>
 
-                <h1 className="text-4xl md:text-4xl lg:text-5xl font-extrabold font-montserrat leading-tight mb-6">
+                <h1 className="text-left text-4xl md:text-4xl lg:text-5xl lg:text-center font-extrabold font-montserrat leading-relaxed mb-6">
                     Daily Profitable Forex Signals Delivered Straight to You
                 </h1>
 
-                <p className="text-gray-300 text-lg font-inter max-w-xl mb-8">
+                <p className="text-gray-300 text-left text-lg  lg:text-center font-inter max-w-xl mb-8">
                     Stop guessing and start winning. Join our signal group and get 90%+ accurate Forex trade alerts from experts — even if you&lsquo;re just starting out.
                 </p>
 
