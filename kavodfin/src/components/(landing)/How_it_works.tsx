@@ -8,7 +8,7 @@ export default function HowItWorksSection() {
   return (
     <section id="how-it-works" className="bg-white py-24 px-6 md:px-20 text-center">
       <h2 className="text-3xl font-montserrat md:text-4xl font-bold text-green-900 mb-16">
-        🛠 How It Works – Simple 3-Step Process
+     How It Works – Simple 3-Step Process
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
