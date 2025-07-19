@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kavodfin.com.ng
+
+# Sitemaps
+Sitemap: https://kavodfin.com.ng/sitemap.xml
