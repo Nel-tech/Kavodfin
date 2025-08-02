@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { usePathname } from 'next/navigation';
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from "next/image";
 
 function Nav() {
     const pathname = usePathname();
@@ -28,14 +29,15 @@ function Nav() {
     return (
         <div className="w-full">
             <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-md px-1 flex items-center justify-between py-5 md:px-12 lg:px-20">
-
-                {/* Logo */}
                 <Link
                     href="/"
                     className="text-2xl font-montserrat font-bold text-yellow-400 tracking-wide hover:opacity-90 transition"
                 >
                     KavodFin
                 </Link>
+
+
+
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center gap-8">
