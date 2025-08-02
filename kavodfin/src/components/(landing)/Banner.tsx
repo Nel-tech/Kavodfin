@@ -1,8 +1,14 @@
 'use client';
+import {DialogDemo} from "../(landing)/Dialog"; 
+import { Button } from "@/components/ui/button";
 
 function FinalCTA() {
+
+
     return (
-        <section className="relative  mt-[4rem] py-[2rem] h-[70vh] md:h-[80vh] bg-green-900 text-white px-6 flex flex-col items-center justify-center text-center overflow-hidden">
+        <>
+        
+        <section className="relative  mt-[4rem]  text-white px-6 flex flex-col items-center justify-center text-center ">
            
             <svg
                 className="absolute inset-0 w-full h-full opacity-10 z-0"
@@ -16,11 +22,7 @@ function FinalCTA() {
                 </defs>
                 <rect width="100%" height="100%" fill="url(#grid)" />
             </svg>
-            {/* Title */}
-            <h2 className="text-2xl lg:text-2xl md:text-2xl font-bold mb-10 font-montserrat leading-snug z-10">
-                <span className="text-yellow-400">Still Confused?</span><br />
-                Watch This Video to Learn More
-            </h2>
+          
 
             
             <div className="relative w-full max-w-2xl aspect-video rounded-xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300 z-10">
@@ -34,9 +36,20 @@ function FinalCTA() {
                 </video>
             </div>
 
-        
+
 
         </section>
+        <div className="flex justify-center pt-[2rem]">
+                   <DialogDemo
+          trigger={
+            <Button className="cursor-pointer font-montserrat uppercase bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 text-white font-bold text-lg px-8 py-10 rounded-lg shadow-lg hover:shadow-emerald-400/30 transition-all duration-300 transform hover:-translate-y-1">
+              Register Now
+            </Button>
+          }
+        />
+        </div>
+
+        </>
     );
 }
 

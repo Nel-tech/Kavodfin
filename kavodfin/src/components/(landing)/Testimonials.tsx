@@ -12,10 +12,10 @@ function Testimonials() {
             viewport={{ once: true }}
             className="mt-[8rem]"
         >
-            <div className="container mx-auto">
-                <h2 className="text-3xl font-bold text-center text-green-800 mb-12 font-montserrat">
+            <div className="container mx-auto pb-[2rem]">
+                {/* <h2 className="text-3xl font-bold text-center text-green-800 mb-12 font-montserrat">
                     Success Stories
-                </h2>
+                </h2> */}
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {testimonials.map((testimonial, i) => (
