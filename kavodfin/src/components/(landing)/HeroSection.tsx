@@ -96,7 +96,7 @@ const floatingVariants: Variants = {
             <div className="space-y-4">
               <motion.h1
                 variants={itemVariants}
-                className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-[0.9] tracking-tight"
+                className="text-4xl sm:text-5xl lg:text-6xl font-montserrat xl:text-7xl font-black leading-[0.9] tracking-tight"
               >
                 <span className="block text-white/90 mb-2">What I&apos;m About to Share</span>
                 <span className="block bg-gradient-to-r from-yellow-400 via-yellow-300 to-amber-400 bg-clip-text text-transparent mb-2">
@@ -107,7 +107,7 @@ const floatingVariants: Variants = {
 
               <motion.p
                 variants={itemVariants}
-                className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-white/80 leading-tight"
+                className="text-xl sm:text-2xl lg:text-3xl font-montserrat xl:text-4xl font-bold text-white/80 leading-tight"
               >
                 And It Might Be Exactly What You Need to Start{" "}
                 <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">
@@ -117,7 +117,7 @@ const floatingVariants: Variants = {
             </div>
 
             {/* Subheadlines */}
-            <motion.div variants={itemVariants} className="space-y-6">
+            <motion.div variants={itemVariants} className="space-y-6 font-montserrat">
               <p className="text-lg sm:text-xl lg:text-2xl text-white/70 leading-relaxed font-medium">
                 Give us just{" "}
                 <span className="text-yellow-400 font-bold bg-yellow-400/10 px-2 py-1 rounded">4 weeks</span> — we&apos;ll
@@ -143,7 +143,7 @@ const floatingVariants: Variants = {
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
                 <a href="https://chat.whatsapp.com/FEZGuJbpOof60XCaerA9zo" target="_blank" rel="noopener noreferrer">
-                  <Button className="bg-gradient-to-r from-yellow-400 to-amber-400 hover:from-yellow-500 hover:to-amber-500 text-black font-bold text-lg px-8 py-8 rounded-xl shadow-2xl hover:shadow-yellow-400/25 transition-all duration-300 transform hover:-translate-y-1">
+                  <Button className=" font-montserrat bg-gradient-to-r from-yellow-400 to-amber-400 hover:from-yellow-500 hover:to-amber-500 text-black font-bold text-lg px-8 py-8 rounded-xl shadow-2xl hover:shadow-yellow-400/25 transition-all duration-300 transform hover:-translate-y-1">
                      Register
                   </Button>
                 </a>
