@@ -110,26 +110,32 @@ function HeroSection({ children }: HeroProps) {
           </motion.div>
 
           {/* Right: Key bullet points */}
-          <motion.div variants={itemVariants} className="space-y-6">
-            <ul className="space-y-4 text-white/80 font-medium text-lg font-montserrat list-disc list-inside">
-              <li>
-                Copy real-time trades from expert traders
-              </li>
-              <li>
-                Grow weekly cashflow — even with a small account
-              </li>
-              <li>
-                Earn your first <span className="text-yellow-400 font-semibold">$300 – $1,000+</span> in 30 days
-              </li>
-              <li>
-                If you don’t profit, get <span className="text-yellow-400 font-semibold">$100 cash</span> (Terms apply)
-              </li>
-            </ul>
+         <motion.div variants={itemVariants} className="space-y-6">
+  <div className="text-white/90 font-semibold text-xl font-montserrat">
+    <p>
+      In just <span className="text-yellow-400 font-bold">4 weeks</span>, you’ll discover how to copy proven trades, grow consistent cashflow, and if you don’t profit — <span className="text-yellow-400 font-bold">$100</span> is yours.
+    </p>
+    <p className="mt-3">
+      Over <span className="text-yellow-400 font-bold">1,700 Nigerians</span> have already started earning in dollars — now it’s your turn.
+    </p>
+  </div>
 
-            <p className="text-white/60 text-base mt-4">
-              Watch the video above and see why <span className="text-yellow-400 font-semibold">1,700+ Nigerians</span> trust us.
-            </p>
-          </motion.div>
+  <ul className="space-y-4 text-white/80 font-medium text-lg font-montserrat list-disc list-inside pt-4">
+    <li>Copy real-time trades from expert traders</li>
+    <li>Grow weekly cashflow — even with a small account</li>
+    <li>
+      Earn your first <span className="text-yellow-400 font-semibold">$300 – $1,000+</span> in 30 days
+    </li>
+    <li>
+      If you don’t profit, get <span className="text-yellow-400 font-semibold">$100 cash</span> (Terms apply)
+    </li>
+  </ul>
+
+  <p className="text-white/60 text-base mt-4">
+    Watch the video above and see why <span className="text-yellow-400 font-semibold">1,700+ Nigerians</span> trust us.
+  </p>
+</motion.div>
+
         </div>
       </motion.div>
     </section>
