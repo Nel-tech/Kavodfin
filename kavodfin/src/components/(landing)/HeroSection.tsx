@@ -96,7 +96,7 @@ const floatingVariants: Variants = {
             <div className="space-y-4">
               <motion.h1
                 variants={itemVariants}
-                className="text-4xl sm:text-5xl lg:text-6xl font-montserrat xl:text-7xl font-black leading-[0.9] tracking-tight"
+                className="text-2xl  lg:text-4xl font-montserrat xl:text-5xl font-black leading-normal tracking-tight"
               >
                 <span className="block text-white/90 mb-2">What I&apos;m About to Share</span>
                 <span className="block bg-gradient-to-r from-yellow-400 via-yellow-300 to-amber-400 bg-clip-text text-transparent mb-2">

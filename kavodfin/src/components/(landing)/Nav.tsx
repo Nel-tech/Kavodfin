@@ -1,17 +1,17 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Dialog } from '@headlessui/react';
+// import { Dialog } from '@headlessui/react';
 import Link from 'next/link';
-import { Button } from "@/components/ui/button";
-import { usePathname } from 'next/navigation';
-import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from 'framer-motion';
+// import { Button } from "@/components/ui/button";
+// import { usePathname } from 'next/navigation';
+// import { Menu, X } from "lucide-react";
+// import { motion, AnimatePresence } from 'framer-motion';
 
 
 function Nav() {
-    const pathname = usePathname();
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    // const pathname = usePathname();
+    // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [hasMounted, setHasMounted] = useState(false);
 
     useEffect(() => {
@@ -20,11 +20,11 @@ function Nav() {
 
     if (!hasMounted) return null;
 
-    const navigation = [
-        // { name: 'Home', href: '/' },
-        { name: 'About', href: '#about' },
-        { name: 'How It Works', href: '#how-it-works' },
-    ];
+    // const navigation = [
+    //     // { name: 'Home', href: '/' },
+    //     { name: 'About', href: '#about' },
+    //     { name: 'How It Works', href: '#how-it-works' },
+    // ];
 
     return (
         <div className="w-full">
@@ -40,7 +40,7 @@ function Nav() {
 
 
                 {/* Desktop Navigation */}
-                <div className="hidden md:flex items-center gap-8">
+                {/* <div className="hidden md:flex items-center gap-8">
                     {navigation.map((item) => (
                         <a
                             key={item.name}
@@ -53,10 +53,10 @@ function Nav() {
                             {item.name}
                         </a>
                     ))}
-                </div>
+                </div> */}
 
                 {/* CTA Button */}
-                <div className="hidden md:flex">
+                {/* <div className="hidden md:flex">
                    
                         <Link href='/details'>
                         
@@ -66,10 +66,10 @@ function Nav() {
                         </Link>
                   
 
-                </div>
+                </div> */}
 
                 {/* Mobile Menu Icon */}
-                <div className="md:hidden">
+                {/* <div className="md:hidden">
                     <button
                         type="button"
                         onClick={() => setMobileMenuOpen(true)}
@@ -77,11 +77,18 @@ function Nav() {
                     >
                         <Menu className="h-6 w-6" />
                     </button>
-                </div>
+                </div> */}
             </nav>
 
             {/* Mobile Menu */}
-            <AnimatePresence>
+            
+        </div>
+    );
+}
+
+export default Nav;
+
+{/* <AnimatePresence>
                 {mobileMenuOpen && (
                     <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                         <motion.div
@@ -102,45 +109,40 @@ function Nav() {
                             <Dialog.Panel>
                                 <div className="flex items-center justify-between">
                                     {/* <h2 className="text-xl font-bold text-yellow-400">KavodFin</h2> */}
-                                    <button
-                                        type="button"
-                                        onClick={() => setMobileMenuOpen(false)}
-                                        className="text-white"
-                                    >
-                                        <X className="h-6 w-6" />
-                                    </button>
-                                </div>
+            //                         <button
+            //                             type="button"
+            //                             onClick={() => setMobileMenuOpen(false)}
+            //                             className="text-white"
+            //                         >
+            //                             <X className="h-6 w-6" />
+            //                         </button>
+            //                     </div>
 
-                                <div className="mt-8 space-y-6">
-                                    {navigation.map((item) => (
-                                        <a
-                                            key={item.name}
-                                            href={item.href}
-                                            className={`block text-lg font-semibold transition ${pathname === item.href
-                                                    ? 'text-yellow-400 underline'
-                                                    : 'hover:text-yellow-300'
-                                                }`}
-                                            onClick={() => setMobileMenuOpen(false)}
-                                        >
-                                            {item.name}
-                                        </a>
-                                    ))}
+            //                     <div className="mt-8 space-y-6">
+            //                         {navigation.map((item) => (
+            //                             <a
+            //                                 key={item.name}
+            //                                 href={item.href}
+            //                                 className={`block text-lg font-semibold transition ${pathname === item.href
+            //                                         ? 'text-yellow-400 underline'
+            //                                         : 'hover:text-yellow-300'
+            //                                     }`}
+            //                                 onClick={() => setMobileMenuOpen(false)}
+            //                             >
+            //                                 {item.name}
+            //                             </a>
+            //                         ))}
 
-                                    <Link href='/details'>
+            //                         <Link href='/details'>
                                     
-                                    <Button className="cursor-pointer mt-6 w-full bg-yellow-400 text-black hover:bg-yellow-500 font-semibold px-6 py-4 rounded-lg shadow-md transition-all">
-                                        Get Started
-                                    </Button>
-                                    </Link>
+            //                         <Button className="cursor-pointer mt-6 w-full bg-yellow-400 text-black hover:bg-yellow-500 font-semibold px-6 py-4 rounded-lg shadow-md transition-all">
+            //                             Get Started
+            //                         </Button>
+            //                         </Link>
 
-                                </div>
-                            </Dialog.Panel>
-                        </motion.div>
-                    </Dialog>
-                )}
-            </AnimatePresence>
-        </div>
-    );
-}
-
-export default Nav;
+            //                     </div>
+            //                 </Dialog.Panel>
+            //             </motion.div>
+            //         </Dialog>
+            //     )}
+            // */}
