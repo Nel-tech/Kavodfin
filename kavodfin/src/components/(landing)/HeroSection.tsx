@@ -132,7 +132,7 @@ function HeroSection({ children }: HeroProps) {
   </ul>
 
   <p className="text-white/60 text-base mt-4">
-    Watch the video above and see why <span className="text-yellow-400 font-semibold">1,700+ Nigerians</span> trust us.
+    Watch the video below and see why <span className="text-yellow-400 font-semibold">1,700+ Nigerians</span> trust us.
   </p>
 </motion.div>
 
