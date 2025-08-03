@@ -101,9 +101,20 @@ export function DialogDemo({ trigger }: DialogDemoProps) {
   </div>
 </div>
 
+ <div className="w-full max-w-[18rem] sm:max-w-[22rem] mx-auto pt-4 flex justify-center text-center">
+    <Button
+      type="submit"
+      className="w-full  cursor-pointer font-montserrat uppercase bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 text-white text-xs sm:text-sm  px-4 py-8 sm:px-6 sm:py-5 rounded-base shadow-lg hover:shadow-emerald-400/30 transition-all duration-300 transform hover:-translate-y-1"
+    >
+      Yes, I&apos;m Ready to Start Earning
+    </Button>
+  </div>
 
 
 
+
+
+<DialogFooter className="pt-4 flex justify-center text-center">
   <div className="mt-6 space-y-4 text-xs sm:text-sm text-gray-600 max-w-[18rem] sm:max-w-[22rem] mx-auto">
   <div className="bg-gray-100 p-3 rounded-lg text-gray-700 space-y-2">
     <p>💬 “I doubled my account in 2 weeks with your signals! The accuracy is unbelievable.” <span className="font-semibold">– Emmanuel T.</span></p>
@@ -119,16 +130,7 @@ export function DialogDemo({ trigger }: DialogDemoProps) {
     </p>
   </div>
 </div>
-
-<DialogFooter className="pt-4 flex justify-center text-center">
-  <div className="w-full max-w-[18rem] sm:max-w-[22rem] mx-auto">
-    <Button
-      type="submit"
-      className="w-full  cursor-pointer font-montserrat uppercase bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 text-white text-xs sm:text-sm  px-4 py-4 sm:px-6 sm:py-5 rounded-lg shadow-lg hover:shadow-emerald-400/30 transition-all duration-300 transform hover:-translate-y-1"
-    >
-      Yes, I&apos;m Ready to Start Earning
-    </Button>
-  </div>
+ 
 </DialogFooter>
 
         </DialogContent>
