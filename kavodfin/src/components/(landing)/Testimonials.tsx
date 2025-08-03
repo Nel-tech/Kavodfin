@@ -25,15 +25,15 @@ function Testimonials() {
                             transition={{ type: "spring", stiffness: 200 }}
                         >
                             <Card className="p-6 border-0 shadow-xl bg-white hover:shadow-2xl transition-all duration-300">
-                                <p className="text-slate-700 mb-6 italic leading-relaxed font-inter">
+                                <p className="text-slate-700 mb-6 italic leading-relaxed">
                                     &ldquo;{testimonial.text}&rdquo;
                                 </p>
                                 <div className="flex items-center justify-between">
                                     <div>
-                                        <div className="font-bold text-slate-800 font-inter">
+                                        <div className="font-bold text-slate-800 ">
                                             {testimonial.name}
                                         </div>
-                                        <div className="text-sm text-slate-500 font-inter">
+                                        <div className="text-sm text-slate-500">
                                             {testimonial.role}
                                         </div>
                                     </div>
