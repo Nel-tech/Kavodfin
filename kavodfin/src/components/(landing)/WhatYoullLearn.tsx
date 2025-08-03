@@ -2,7 +2,7 @@
 export default function WhatYoullLearn() {
   return (
     <section className="bg-slate-800/80 backdrop-blur-md border border-slate-700 text-white px-6 py-12 mt-10 rounded-xl max-w-3xl mx-auto shadow-lg">
-      <h2 className="text-2xl font-bold mb-6 text-yellow-400">In This Video, You’ll Discover:</h2>
+      <h2 className="text-2xl mb-6 text-yellow-400">In This Video, You’ll Discover:</h2>
 
       <ul className="space-y-4 text-lg text-gray-200 leading-relaxed">
         <li>✅ How to copy real-time trades from our expert traders</li>

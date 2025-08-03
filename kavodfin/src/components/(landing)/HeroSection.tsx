@@ -103,7 +103,7 @@ function HeroSection({ children }: HeroProps) {
               className="text-xl font-montserrat text-white/80 leading-snug"
             >
               And It Might Be Exactly What You Need to Start{" "}
-              <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent font-bold">
+              <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent ">
                 Earning in Dollars Weekly!
               </span>
             </motion.p>
@@ -111,16 +111,16 @@ function HeroSection({ children }: HeroProps) {
 
           {/* Right: Key bullet points */}
          <motion.div variants={itemVariants} className="space-y-6">
-  <div className="text-white/90 font-semibold text-xl font-montserrat">
+  <div className="text-white/90 text-lg font-montserrat">
     <p>
-      In just <span className="text-yellow-400 font-bold">4 weeks</span>, you’ll discover how to copy proven trades, grow consistent cashflow, and if you don’t profit — <span className="text-yellow-400 font-bold">$100</span> is yours.
+      In just <span className="text-yellow-400">4 weeks</span>, you’ll discover how to copy proven trades, grow consistent cashflow, and if you don’t profit — <span className="text-yellow-400">$100</span> is yours.
     </p>
     <p className="mt-3">
-      Over <span className="text-yellow-400 font-bold">1,700 Nigerians</span> have already started earning in dollars — now it’s your turn.
+      Over <span className="text-yellow-400">1,700 Nigerians</span> have already started earning in dollars — now it’s your turn.
     </p>
   </div>
 
-  <ul className="space-y-4 text-white/80 font-medium text-lg font-montserrat list-disc list-inside pt-4">
+  <ul className="space-y-4 text-white/80  text-base font-montserrat list-disc list-inside pt-4">
     <li>Copy real-time trades from expert traders</li>
     <li>Grow weekly cashflow — even with a small account</li>
     <li>

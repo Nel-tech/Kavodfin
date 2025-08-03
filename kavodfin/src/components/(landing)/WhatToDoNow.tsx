@@ -14,7 +14,7 @@ export default function WhatToDoNow() {
           <div className="flex flex-col h-full">
            <section className="bg-slate-800/80 backdrop-blur-md border border-slate-700 text-white px-6 py-12 rounded-xl shadow-lg flex-1 flex flex-col justify-between font-montserrat">
   <div className="space-y-6">
-    <h2 className="text-3xl font-extrabold text-yellow-400 tracking-tight">
+    <h2 className="text-3xl font-bold text-yellow-400 tracking-tight">
       What To Do Now
     </h2>
 
@@ -24,13 +24,13 @@ export default function WhatToDoNow() {
 
     <ol className="list-decimal list-inside text-base md:text-lg text-gray-200 leading-relaxed space-y-4 pl-2">
       <li>
-        <span className="font-semibold text-white">Watch the short video above</span> — it contains key info to help you start right.
+        <span className=" text-white">Watch the short video above</span> — it contains key info to help you start right.
       </li>
       <li>
-        <span className="font-semibold text-white">Fill out the form below</span> to reserve your spot before it closes.
+        <span className=" text-white">Fill out the form below</span> to reserve your spot before it closes.
       </li>
       <li>
-        <span className="font-semibold text-white">Connect with the admin immediately</span> — you’ll be guided step-by-step.
+        <span className=" text-white">Connect with the admin immediately</span> — you’ll be guided step-by-step.
       </li>
     </ol>
 
@@ -38,7 +38,7 @@ export default function WhatToDoNow() {
       <p className="text-white/70 text-base">
         Don’t fall for random signals and hype — follow a system backed by results.
       </p>
-      <p className="text-yellow-400 font-semibold text-lg">
+      <p className="text-yellow-400  text-lg">
         Get real results — or we’ll refund your ₦5,000 and still pay you $100. No risks, just action.
       </p>
       <p className="text-sm text-white/40 italic pt-2">
@@ -160,7 +160,7 @@ export default function WhatToDoNow() {
      <div className="flex justify-center pt-8">
                   <DialogDemo
           trigger={
-            <Button className="cursor-pointer font-montserrat uppercase bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 text-white font-bold text-lg px-8 py-10 rounded-lg shadow-lg hover:shadow-emerald-400/30 transition-all duration-300 transform hover:-translate-y-1">
+            <Button className="cursor-pointer font-montserrat uppercase bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 text-white  text-lg px-8 py-10 rounded-lg shadow-lg hover:shadow-emerald-400/30 transition-all duration-300 transform hover:-translate-y-1">
               Register Now
             </Button>
           }
