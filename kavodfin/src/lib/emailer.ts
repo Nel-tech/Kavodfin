@@ -1,19 +1,29 @@
-// utils/emailer.ts
+// lib/emailer.ts
 import nodemailer from 'nodemailer';
-import dotenv from 'dotenv';
-dotenv.config();
+
+// Remove dotenv - Next.js handles .env automatically
+// dotenv.config(); // ❌ DELETE THIS LINE
 
 const createTransporter = () => {
+  // Validate environment variables exist
+  if (!process.env.BREVO_SMTP_USER || !process.env.BREVO_SMTP_PASS) {
+    throw new Error('Missing BREVO_SMTP_USER or BREVO_SMTP_PASS environment variables');
+  }
+
+  console.log('Environment check:', {
+    user: process.env.BREVO_SMTP_USER,
+    hasPassword: !!process.env.BREVO_SMTP_PASS,
+    host: process.env.SMTP_SERVER,
+    port: process.env.SMTP_PORT,
+  });
+
   return nodemailer.createTransport({
-    host: process.env.SMTP_SERVER || 'smtp-relay.brevo.com',
-    port: Number(process.env.SMTP_PORT) || 587,
-    secure: false, // TLS starts automatically
+    host: 'smtp-relay.brevo.com',
+    port: 587,
+    secure: false,
     auth: { 
       user: process.env.BREVO_SMTP_USER,
       pass: process.env.BREVO_SMTP_PASS, 
-    },
-    tls: {
-      rejectUnauthorized: false, 
     },
   });
 };
@@ -22,17 +32,17 @@ export const sendEmail = async (to: string, subject: string, html: string) => {
   try {
     const transporter = createTransporter();
     
-    await transporter.sendMail({
+    const info = await transporter.sendMail({
       from: '"KavodFin" <noreply@kavodfin.com>',
       to,
       subject,
       html,
     });
     
-    console.log(`Email sent successfully to ${to}`);
-    return true;
+    console.log('✅ Email sent:', info.messageId);
+    return info;
   } catch (error) {
-    console.error(`Failed to send email to ${to}:`, error);
-    throw new Error('Email could not be sent. Please try again.');
+    console.error('❌ Email error:', error);
+    throw error;
   }
 };
