@@ -1,61 +1,55 @@
-"use client"
+export function getReminderEmailHTML(name: string, joinUrl: string): string {
+  return `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <style>
+          body { font-family: 'Montserrat', Arial, sans-serif; background-color: #f6f9fc; margin: 0; padding: 0; }
+          .container { max-width: 600px; margin: 0 auto; padding: 40px 20px; }
+          .header { background: linear-gradient(135deg, #059669 0%, #10b981 100%); padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+          .header h1 { color: white; margin: 0; font-size: 28px; }
+          .content { background: white; padding: 40px 30px; border-radius: 0 0 10px 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+          .content p { color: #333; font-size: 16px; line-height: 26px; margin-bottom: 20px; }
+          .button { display: inline-block; background: linear-gradient(135deg, #059669 0%, #10b981 100%); color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px; margin: 20px 0; }
+          .highlight { background-color: #fef3c7; padding: 15px; border-left: 4px solid #f59e0b; margin: 20px 0; border-radius: 4px; }
+          .footer { text-align: center; padding: 20px; color: #666; font-size: 14px; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <h1>Hey ${name}, Don't Miss Out! ⏰</h1>
+          </div>
+          <div class="content">
+            <p>We noticed you haven't joined our community yet.</p>
+            <p>Spots are filling up fast, and we don't want you to miss this opportunity to start earning $3,000 - $5,000/month through Forex trading.</p>
+            
+            <div style="text-align: center;">
+              <a href="${joinUrl}" class="button">
+                Join Now - Limited Spots 🚀
+              </a>
+            </div>
 
-import {
-  Body,
-  Button,
-  Container,
-  Head,
-  Heading,
-  Html,
-  Preview,
-  Text,
-} from '@react-email/components';
+            <div class="highlight">
+              <p style="margin: 0; font-weight: bold; color: #059669;">
+                💰 Remember: If our system doesn't work for you, we'll pay you $100.
+              </p>
+              <p style="margin: 10px 0 0 0; color: #666;">
+                You have nothing to lose!
+              </p>
+            </div>
 
-interface ReminderEmailProps {
-  name: string;
-  joinUrl: string;
+            <p style="margin-top: 30px; color: #059669; font-weight: bold;">
+              To your success,<br>
+              The KavodFin Team
+            </p>
+          </div>
+          <div class="footer">
+            <p>&copy; ${new Date().getFullYear()} KavodFin. All rights reserved.</p>
+          </div>
+        </div>
+      </body>
+    </html>
+  `;
 }
-
-export default function ReminderEmail({ name, joinUrl }: ReminderEmailProps) {
-  return (
-    <Html>
-      <Head />
-      <Preview>Don&apos;t Miss Out - Join KavodFin Now</Preview>
-      <Body style={main}>
-        <Container style={container}>
-          <Heading style={h1}>Hey {name}, Don&apos;t Miss Out! ⏰</Heading>
-          <Text style={text}>
-            We noticed you haven&apos;t joined our community yet. 
-          </Text>
-          <Text style={text}>
-            Spots are filling up fast, and we don&apos;t want you to miss this opportunity 
-            to start earning $3,000 - $5,000/month through Forex trading.
-          </Text>
-          <Button style={button} href={joinUrl}>
-            Join Now - Limited Spots
-          </Button>
-          <Text style={text}>
-            Remember: If our system doesn&apos;t work for you, we&apos;ll pay you $100. 
-            You have nothing to lose!
-          </Text>
-        </Container>
-      </Body>
-    </Html>
-  );
-}
-
-const main = { backgroundColor: '#f6f9fc', fontFamily: 'Montserrat, sans-serif' };
-const container = { margin: '0 auto', padding: '20px 0 48px' };
-const h1 = { color: '#059669', fontSize: '24px' };
-const text = { color: '#333', fontSize: '16px', lineHeight: '26px' };
-const button = {
-  backgroundColor: '#059669',
-  borderRadius: '8px',
-  color: '#fff',
-  fontSize: '16px',
-  fontWeight: 'bold',
-  textDecoration: 'none',
-  textAlign: 'center' as const,
-  display: 'block',
-  padding: '12px 20px',
-};

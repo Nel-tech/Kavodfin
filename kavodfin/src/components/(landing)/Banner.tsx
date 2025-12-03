@@ -31,7 +31,7 @@ function FinalCTA() {
                     poster="/video/kavodfin-thumb.png"  
                     className="w-full h-full object-cover"
                 >
-                    <source src="/video/KavodFin.mp4" type="video/mp4" />
+                    <source src="/video/CTA.mp4" type="video/mp4"  />
                     Your browser does not support the video tag.
                 </video>
             </div>
