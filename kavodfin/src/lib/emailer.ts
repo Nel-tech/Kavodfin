@@ -1,46 +1,28 @@
 // lib/emailer.ts
-import nodemailer from 'nodemailer';
-
-// Remove dotenv - Next.js handles .env automatically
-// dotenv.config(); // ❌ DELETE THIS LINE
-
-const createTransporter = () => {
-  // Validate environment variables exist
-  if (!process.env.BREVO_SMTP_USER || !process.env.BREVO_SMTP_PASS) {
-    throw new Error('Missing BREVO_SMTP_USER or BREVO_SMTP_PASS environment variables');
-  }
-
-  console.log('Environment check:', {
-    user: process.env.BREVO_SMTP_USER,
-    hasPassword: !!process.env.BREVO_SMTP_PASS,
-    host: process.env.SMTP_SERVER,
-    port: process.env.SMTP_PORT,
-  });
-
-  return nodemailer.createTransport({
-    host: 'smtp-relay.brevo.com',
-    port: 587,
-    secure: false,
-    auth: { 
-      user: process.env.BREVO_SMTP_USER,
-      pass: process.env.BREVO_SMTP_PASS, 
-    },
-  });
-};
+import * as brevo from '@getbrevo/brevo';
 
 export const sendEmail = async (to: string, subject: string, html: string) => {
   try {
-    const transporter = createTransporter();
-    
-    const info = await transporter.sendMail({
-      from: '"KavodFin" <noreply@kavodfin.com>',
-      to,
-      subject,
-      html,
-    });
-    
-    console.log('✅ Email sent:', info.messageId);
-    return info;
+    // Initialize Brevo API client
+    const apiInstance = new brevo.TransactionalEmailsApi();
+    apiInstance.setApiKey(
+      brevo.TransactionalEmailsApiApiKeys.apiKey,
+      process.env.BREVO_API_KEY || ''
+    );
+
+    // Prepare email
+    const sendSmtpEmail = new brevo.SendSmtpEmail();
+    sendSmtpEmail.sender = { 
+      name: 'Kavodfin', 
+      email: 'noreply@kavodfin.com.ng' 
+    };
+    sendSmtpEmail.to = [{ email: to }];
+    sendSmtpEmail.subject = subject;
+    sendSmtpEmail.htmlContent = html;
+
+    // Send email
+    const response = await apiInstance.sendTransacEmail(sendSmtpEmail);
+    return response;
   } catch (error) {
     console.error('❌ Email error:', error);
     throw error;
