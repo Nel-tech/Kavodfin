@@ -22,7 +22,7 @@ export function getWelcomeEmailHTML(name: string): string {
           <div class="content">
             <p>Thank you for joining KavodFin. You're one step closer to making $3,000 - $5,000/month from Forex trading.</p>
             <p>Watch the video we sent you to learn how to get started with our copy trading system.</p>
-            <p>Have questions? Reply to this email and we'll get back to you ASAP.</p>
+            <p>Got questions? Our DMs are literally one tap away — hit us up anytime.</p>
             <p style="margin-top: 30px; color: #059669; font-weight: bold;">
               To your success,<br>
               The KavodFin Team

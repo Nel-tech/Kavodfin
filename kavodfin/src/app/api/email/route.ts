@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 import { getWelcomeEmailHTML } from '@/components/emails/WelcomeEmail';
 import { getReminderEmailHTML } from '@/components/emails/reminder-email';
-import { sendEmail } from '@/lib/emailer';
+import { sendEmail } from '../../service/lib/emailer';
 
 export async function POST(request: Request) {
   try {
