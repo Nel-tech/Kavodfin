@@ -38,15 +38,11 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
     }
   }, [video, userId]);
 
-  // Schedule reminder email when join button appears
   useEffect(() => {
     if (showJoinButton && userId) {
-      console.log("⏰ Starting 10-minute timer for reminder email...");
       
       // Schedule reminder email after 10 minutes
       joinButtonTimerRef.current = setTimeout(async () => {
-        console.log("📧 10 minutes passed - scheduling reminder email");
-        
         // Check if user already joined
         const { data: onboarding } = await supabase
           .from('onboarding')
@@ -64,10 +60,8 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
               delayMs: 0, // Send immediately (we already waited 10 mins)
             }),
           });
-          
-          console.log("✅ Reminder email scheduled");
         } else {
-          console.log("⏭️ User already joined - no reminder needed");
+          return ;
         }
       }, 10 * 60 * 1000); // 10 minutes
 
@@ -75,15 +69,12 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
       return () => {
         if (joinButtonTimerRef.current) {
           clearTimeout(joinButtonTimerRef.current);
-          console.log("🧹 Cleared reminder timer");
         }
       };
     }
   }, [showJoinButton, userId]);
 
   const handleVideoEnd = async () => {
-    console.log("🎬 Video ended event triggered");
-    
     // Track video completion
     await supabase
       .from("onboarding")
@@ -92,24 +83,17 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
         status: 'video_completed'
       })
       .eq("user_id", userId);
-
-    console.log("✅ Video finished tracked");
-    setShowJoinButton(true); // Show join button
+    setShowJoinButton(true); 
   };
 
   const handleClose = async () => {
-    console.log("🚪 Close button pressed");
-    
-    // Track video close (didn't finish)
     await supabase
       .from("onboarding")
       .update({ 
         status: 'video_closed'
       })
       .eq("user_id", userId);
-
-    console.log("❌ Video closed early");
-    setShowJoinButton(true); // Show join button
+    setShowJoinButton(true); 
   };
 
   const handleJoinNow = async () => {
@@ -119,7 +103,6 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
       // Clear the reminder timer
       if (joinButtonTimerRef.current) {
         clearTimeout(joinButtonTimerRef.current);
-        console.log("⏹️ Reminder timer cancelled - user clicked join");
       }
 
       // 1️⃣ Track join click
@@ -137,8 +120,6 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId }),
       });
-
-      console.log("✅ Join tracked, all reminders cancelled");
 
       // 3️⃣ Redirect to WhatsApp group
       window.open(WHATSAPP_GROUP_LINK, '_blank');
@@ -174,22 +155,11 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
     const player = new Player(iframe);
     playerRef.current = player;
 
-    console.log("🎥 Vimeo player initialized");
-
     // Listen for ended event
     player.on("ended", () => {
-      console.log("🎬 Video ended!");
       handleVideoEnd();
     });
 
-    // Optional: Listen for other events for debugging
-    player.on("play", () => {
-      console.log("▶️ Video started playing");
-    });
-
-    player.on("pause", () => {
-      console.log("⏸️ Video paused");
-    });
 
     // Try to unmute after a short delay
     setTimeout(() => {

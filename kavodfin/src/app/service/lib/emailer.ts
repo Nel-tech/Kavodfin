@@ -22,7 +22,7 @@ export const sendEmail = async (to: string, subject: string, html: string) => {
 
     // Send email
     const response = await apiInstance.sendTransacEmail(sendSmtpEmail);
-    console.log('✅ Email sent successfully:', response);
+
     return response;
   } catch (error) {
     console.error('❌ Email error:', error);

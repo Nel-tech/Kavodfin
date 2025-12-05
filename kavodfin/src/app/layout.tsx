@@ -35,14 +35,7 @@ export const metadata: Metadata = {
       "Join KavodFin to access real-time forex signals, AI-powered analytics, and a trader-first community.",
     url: "https://kavodfin.com.ng",
     siteName: "KavodFin",
-    images: [
-      {
-        url: "/og-image.png", // Add this image in your public folder
-        width: 1200,
-        height: 630,
-        alt: "KavodFin – Forex made smarter",
-      },
-    ],
+  
     type: "website",
   },
   twitter: {
@@ -53,9 +46,9 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
     creator: "@kavodfin", // Optional: add your Twitter handle
   },
-  icons: {
-    icon: "/favicon.ico", // Place this in your /public directory
-  },
+ icons: {
+  icon: "/favicon.ico",
+},
 };
 
 export default function RootLayout({

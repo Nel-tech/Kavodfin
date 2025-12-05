@@ -2,8 +2,6 @@
 import { reminderWorker } from './reminderWorker';
 
 export function startWorkers() {
-  console.log('🚀 Starting BullMQ workers...');
-  // Worker is already started when imported
   return reminderWorker;
 }
 

@@ -39,7 +39,7 @@ export default function WhatToDoNow() {
         Don’t fall for random signals and hype — follow a system backed by results.
       </p>
       <p className="text-yellow-400  text-lg">
-        Get real results — or we’ll refund your ₦5,000 and still pay you $100. No risks, just action.
+        Get real results — and still pay you $100. No risks, just action.
       </p>
       <p className="text-sm text-white/40 italic pt-2">
         *Only a few spots left. This opportunity is limited to action-takers.

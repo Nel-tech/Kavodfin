@@ -23,8 +23,6 @@ export const reminderWorker = new Worker(
   async (job) => {
     const { name, email, userId } = job.data;
 
-    console.log(`📧 Processing reminder for ${email}`);
-
     try {
       // 1️⃣ Check if user already joined
       const { data: onboarding } = await supabase
@@ -34,12 +32,10 @@ export const reminderWorker = new Worker(
         .single();
 
       if (onboarding?.join_clicked_at) {
-        console.log(`⏭️ User ${userId} already joined. Skipping reminder.`);
         return { skipped: true, reason: 'already_joined' };
       }
 
       if (onboarding?.reminder_sent) {
-        console.log(`⏭️ Reminder already sent to ${userId}. Skipping.`);
         return { skipped: true, reason: 'already_sent' };
       }
 
@@ -62,8 +58,6 @@ export const reminderWorker = new Worker(
           updated_at: new Date().toISOString()
         })
         .eq('user_id', userId);
-
-      console.log(`✅ Reminder email sent to ${email}`);
       return { success: true, email };
 
     } catch (error) {
@@ -75,7 +69,7 @@ export const reminderWorker = new Worker(
 );
 
 reminderWorker.on('completed', (job) => {
-  console.log(`✅ Job ${job.id} completed`);
+ return job.id
 });
 
 reminderWorker.on('failed', (job, err) => {

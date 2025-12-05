@@ -51,7 +51,12 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     const res = await fetch('/api/users', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, mobile_number: mobile }),
+     body: JSON.stringify({ 
+    name, 
+    email, 
+    mobile_number: mobile,
+    website: formData.get('website')
+  }),
     });
 
     const result = await res.json();

@@ -7,7 +7,7 @@ export default function WhatYoullLearn() {
       <ul className="space-y-4 text-lg text-gray-200 leading-relaxed">
         <li>✅ How to copy real-time trades from our expert traders</li>
         <li>✅ How to grow consistent weekly dollar cashflow — even with a small account</li>
-        <li>✅ How to earn your first <strong>$300 – $1,000+</strong> in the next 30 days</li>
+        <li>✅ How to earn your first <strong>$300 – $500+</strong> in the next 30 days</li>
         <li>✅ And if you don’t profit, we’ll pay you <strong>$100 cash</strong> (Yes, really — terms apply)</li>
       </ul>
 

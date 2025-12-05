@@ -19,13 +19,10 @@ export async function POST(request: Request) {
       { userId, name, email },
       {
         delay: delayMs,
-        jobId: `reminder-${userId}`, // Unique ID so we can cancel it later
-        removeOnComplete: true, // Clean up after completion
-        removeOnFail: false, // Keep failed jobs for debugging
+        jobId: `reminder-${userId}`, 
+        removeOnComplete: true, 
       }
     );
-
-    console.log(`📅 Scheduled reminder for ${email} (${delayMs}ms delay)`);
 
     return NextResponse.json({ 
       success: true,

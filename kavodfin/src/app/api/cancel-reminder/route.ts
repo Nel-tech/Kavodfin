@@ -18,17 +18,13 @@ export async function POST(request: Request) {
     const job = await reminderQueue.getJob(jobId);
     
     if (job) {
-      await job.remove();
-      console.log(`✅ Cancelled reminder for user ${userId}`);
-      
+      await job.remove();      
       return NextResponse.json({ 
         success: true,
         message: 'Reminder cancelled successfully',
         jobId 
       });
     } else {
-      console.log(`⚠️ No reminder job found for user ${userId}`);
-      
       return NextResponse.json({ 
         success: true,
         message: 'No reminder job found (may have already been processed)',
