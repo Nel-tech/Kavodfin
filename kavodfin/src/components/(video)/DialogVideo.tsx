@@ -34,7 +34,7 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
           status: 'video_watching'
         })
         .eq("user_id", userId)
-        .then(() => console.log("📹 Video started tracked"));
+        .then(() => console.log(""));
     }
   }, [video, userId]);
 

@@ -14,7 +14,6 @@ export async function POST(req: Request) {
 
     // Bot detection (honeypot)
     if (website) {
-      console.log('Bot detected, silently rejecting');
       return NextResponse.json({ user: { id: 'fake' } }, { status: 200 });
     }
 
@@ -66,8 +65,6 @@ export async function POST(req: Request) {
         { status: 500 }
       );
     }
-
-    console.log('✅ User created:', userId);
 
     return NextResponse.json({ user: userData }, { status: 200 });
   } catch (err) {
