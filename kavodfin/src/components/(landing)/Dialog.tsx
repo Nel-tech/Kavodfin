@@ -105,7 +105,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           <form onSubmit={handleSubmit}>
             <DialogHeader className="px-8 pt-[3rem] mx-auto text-center">
               <DialogTitle className="text-emerald-700 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-tight sm:leading-snug">
-                How to Make $3,000 – $5,000/Month From Forex Trading
+                How to Make $300 – $1000/Month From Forex Trading
               </DialogTitle>
               <DialogDescription className="mt-2 text-xs xs:text-sm sm:text-base text-gray-600 leading-relaxed">
                 Discover how to copy trades and build weekly cashflow — or we&apos;ll pay you
