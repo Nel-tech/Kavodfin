@@ -15,6 +15,7 @@ interface VideoProps {
 }
 
 function DialogVideo({ video, setVideo, userId }: VideoProps) {
+  const [leadFired, setLeadFired] = useState(false);
   const [showJoinButton, setShowJoinButton] = useState(false);
   const [joiningNow, setJoiningNow] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
@@ -41,9 +42,9 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
   useEffect(() => {
     if (showJoinButton && userId) {
       
-      // Schedule reminder email after 10 minutes
+      
       joinButtonTimerRef.current = setTimeout(async () => {
-        // Check if user already joined
+        
         const { data: onboarding } = await supabase
           .from('onboarding')
           .select('join_clicked_at')
@@ -51,21 +52,21 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
           .single();
 
         if (!onboarding?.join_clicked_at) {
-          // User hasn't joined - schedule reminder
+          
           await fetch('/api/queue/schedule-reminder', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               userId,
-              delayMs: 0, // Send immediately (we already waited 10 mins)
+              delayMs: 0, 
             }),
           });
         } else {
           return ;
         }
-      }, 10 * 60 * 1000); // 10 minutes
+      }, 10 * 60 * 1000); 
 
-      // Cleanup timer on unmount
+      
       return () => {
         if (joinButtonTimerRef.current) {
           clearTimeout(joinButtonTimerRef.current);
@@ -74,8 +75,15 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
     }
   }, [showJoinButton, userId]);
 
+  const fireMetaLead = () => {
+  if (!leadFired && typeof window !== "undefined" && typeof window.fbq === "function") {
+    window.fbq("track", "Lead");
+    setLeadFired(true);
+  }
+};
+
   const handleVideoEnd = async () => {
-    // Track video completion
+    fireMetaLead(); 
     await supabase
       .from("onboarding")
       .update({ 
@@ -87,6 +95,7 @@ function DialogVideo({ video, setVideo, userId }: VideoProps) {
   };
 
   const handleClose = async () => {
+    fireMetaLead();
     await supabase
       .from("onboarding")
       .update({ 
