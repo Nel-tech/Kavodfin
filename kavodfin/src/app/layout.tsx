@@ -52,7 +52,7 @@ export const metadata: Metadata = {
 
   
   other: {
-    "facebook-domain-verification":"TEST_123_ABC",
+    "facebook-domain-verification":`${process.env.NEXT_PUBLIC_FB_DOMAIN_VERIFICATION}`,
 
   },
 };
