@@ -49,13 +49,19 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+
+  
+  other: {
+    "facebook-domain-verification":
+      process.env.NEXT_PUBLIC_FB_DOMAIN_VERIFICATION,
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       {/* Meta Pixel */}
